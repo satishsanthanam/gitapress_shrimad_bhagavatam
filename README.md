@@ -113,7 +113,7 @@ Open `http://localhost:8000` in your browser.
 * **Sanskrit Text & English Translation**: *Śrīmad Bhāgavata Mahāpurāṇa* (Parts 1 & 2) — Published by [Gita Press, Gorakhpur](https://gitapress.org).
 * **PDF Processing & OCR**: [Mistral AI OCR](https://mistral.ai) — High-accuracy document parsing and text extraction from source PDF scans.
 * **Developer & Maintainer**: [Satish Santhanam](https://ventpipe.blog) — Engineered dataset conversion scripts, site generator pipeline, and Cloudflare Pages CI/CD integration.
-* **Publication Blog**: [ventpipe.blog](https://ventpipe.blog)
+* **Publication Blog**: [ventpipe.blog](https://ventpipe.blog/2026/09/29/shrimad-bhagavat-mahapurana/)
 * **AI Collaboration**: Pair-programming collaboration with **Google Gemini AI** (build automation, script engineering, UI architecture) & **Mistral AI** (PDF OCR & text extraction).
 
 
