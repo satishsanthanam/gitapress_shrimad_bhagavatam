@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Śrīmad Bhāgavata Purāṇa - Table of Contents</title>
+    <!-- Pagefind Search Integration -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <style>
+        :root {
+            --primary-color: #701c1c;
+            --secondary-color: #8b2525;
+            --bg-light: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-dark: #2c2c2c;
+            --border-color: #e2d9d0;
+            --hover-bg: #fffde7;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        #search-box {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #fdfbf7;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .controls-bar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn-toggle {
+            background: #f4efe6;
+            border: 1px solid var(--border-color);
+            color: var(--primary-color);
+            padding: 6px 14px;
+            font-size: 0.85em;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-toggle:hover {
+            background: var(--hover-bg);
+            border-color: var(--primary-color);
+        }
+
+        .canto-card {
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #fff;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        .canto-card[open] {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        summary {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            background: #faf6f0;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .canto-card[open] summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary h2 {
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        summary h2::before {
+            content: '▶';
+            font-size: 0.75em;
+            color: var(--primary-color);
+            transition: transform 0.2s ease;
+        }
+
+        .canto-card[open] summary h2::before {
+            transform: rotate(90deg);
+        }
+
+        .ch-count {
+            font-size: 0.85em;
+            color: #777;
+            font-style: italic;
+        }
+
+        .chapter-list {
+            list-style: none;
+            padding: 15px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 10px;
+        }
+
+        .chapter-list li a {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            transition: all 0.2s ease;
+            background: #fff;
+        }
+
+        .chapter-list li a:hover {
+            background-color: var(--hover-bg);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .ch-badge {
+            background: var(--primary-color);
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .ch-title {
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <h1>Śrīmad Bhāgavata Purāṇa</h1>
+    <div class="subtitle">Complete Parallel Sanskrit & English Translation</div>
+
+    <!-- Search Input Area -->
+    <div id="search-box"></div>
+
+    <!-- Expand/Collapse All Buttons -->
+    <div class="controls-bar">
+        <button class="btn-toggle" onclick="toggleAll(true)">Expand All</button>
+        <button class="btn-toggle" onclick="toggleAll(false)">Collapse All</button>
+    </div>
+
+    <!-- Table of Contents -->
+    <div id="toc">
+        
+        <details class="canto-card" open>
+            <summary>
+                <h2>Śrīmad Bhāgavata Māhātmya</h2>
+                <span class="ch-count">6 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="00/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">A Dialogue between Narada and Bhakti (in a living form)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="00/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">A Dialogue between the Kumaras and Narada</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="00/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Cessation of Bhakti's Suffering</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="00/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Redemption of a Brahma (Atmadeva)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="00/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">How Gokarna attained final beatitude (alongwith others)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="00/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">The procedure of hearing Srimad Bhagavata (in a week) detailed</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book One (First Canto)</h2>
+                <span class="ch-count">19 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="01/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">Saunaka and other sages interrogate the famous Suta (Ugrasrava)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Glory of the Lord's narrative and of Devotion to Him</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">The Lord's Avataras or Descents into the world of matter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">A sense of frustration overtakes Vedavyasa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Glory of singing the Lord's praises and an account of Devarji Narada's previous life</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">The rest of the story of Narada's previous birth</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Aswatthama assassinates Draupadi's sons and Arjuna in his turn curbs his pride</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The Lord delivers Pariksit in the womb and is extolled by Kunti; Yudhiṣṭhira gives way to grief</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Yudhiṣṭhira and others call on Bhīṣma and the latter drops his mortal coil, extolling Śrī Kṛṣṇa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">Sri Krsna's Departure to Dwaraka</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Right royal reception of Sri Krsna at Dwaraka</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">Birth of Pariksit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">Departure of Dhrtarastra and his wife Gandhari, for the forest at the instance of Vidura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">King-Yudhiṣṭhira grows apprehensive at the sight of evil omens and Arjuna returns from Dwaraka</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Stricken with grief at their separation from Sri Krsna, the Pandavas instal Pariksit on the throne of Hastinapura and ascend to heaven</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">Conquest of the world by king Pariksit and the dialogue between Dharma (the god of piety) and Mother Earth</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">King Pariksit subdues Kali</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">The youthful sage Sringi utters an imprecation against king Pariksit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="01/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">Parikṣit takes a vow of fasting till death and Śuka pays a visit to him ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Two (Second Canto)</h2>
+                <span class="ch-count">10 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="02/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The process of meditation and the cosmic form of the Lord described ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Concentration on the gross and subtle forms of the Lord and the two types of Mukti (Liberation), viz., Kramamukti or gradual Liberation and Sadyomukti or immediate Liberation ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Worship of different deities for the gratification of various desires and the superiority of Devotion to the Lord ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">The king asks a question about the creation of the universe and the sage Śuka commences his discourse ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">A description of the cosmos ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Glories of the Cosmic Being ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">The stories of the Lord's sportful descents ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">King Parikṣit asks various questions of the sage Śuka ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Brahmā beholds the divine Abode of the Lord and is taught by Him the text of the Bhāgavata, consisting of four couplets only ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="02/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">The ten characteristic features of the Bhāgavata ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Three (Third Canto)</h2>
+                <span class="ch-count">33 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="03/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">Meeting of Uddhava and Vidura ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Uddhava recounts the childish sports of the Lord ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">A brief survey of the Lord's other exploits ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">As directed by Uddhava, Vidura calls on the sage Maitreya ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">The sage Maitreya describes the process of creation in reply to Vidura's question ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Appearance of the Cosmic Body ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Vidura's questions ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">Brahmā's manifestation ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Brahmā extols the Lord ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">Description of the tenfold creation ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Divisions of Time such as Manvantara and so on ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">The multiplication of creation ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">The Lord's Descent as the Divine Boar ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">Diti's conception ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Sanaka and his three brothers pronounce a curse against Jaya and Vijaya ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">The fall of Jaya and Vijaya from Vaikuṇṭha ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">Birth of Hiranyakaśipu and Hiranyākṣa and the latter's conquest of the four quarters ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">Encounter of the Divine Boar with Hiranyākṣa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">Death of Hiranyākṣa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">The various species of living beings created by Brahmā ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">The sage Kardama practises austere penance and the Lord confers a boon on him ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">The sage Kardama accepts the hand of Devahūti ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">Amorous pastimes of Kardama and Devahūti ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">Descent of Lord Kapila ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch25.html">
+                        <span class="ch-badge">Ch 25</span>
+                        <span class="ch-title">Lord Kapila expatiates on the glory of Devotion in response to the query of mother Devahūti ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch26.html">
+                        <span class="ch-badge">Ch 26</span>
+                        <span class="ch-title">The process of evolution of the Mahat-tattva and other fundamental principles ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch27.html">
+                        <span class="ch-badge">Ch 27</span>
+                        <span class="ch-title">How to attain Liberation through the differentiation of Matter and Spirit? ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch28.html">
+                        <span class="ch-badge">Ch 28</span>
+                        <span class="ch-title">The process of the eightfold Yoga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch29.html">
+                        <span class="ch-badge">Ch 29</span>
+                        <span class="ch-title">True meaning of devotion and the glory of Time ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch30.html">
+                        <span class="ch-badge">Ch 30</span>
+                        <span class="ch-title">Downfall of men attached to their body, house etc. ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch31.html">
+                        <span class="ch-badge">Ch 31</span>
+                        <span class="ch-title">The stages of growth of a human embryo ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch32.html">
+                        <span class="ch-badge">Ch 32</span>
+                        <span class="ch-title">Destiny of the souls departing from this world by the "Bright Path", the "Dark Path" and so on, and the superiority of Bhaktiyoga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="03/mahatmya_ch33.html">
+                        <span class="ch-badge">Ch 33</span>
+                        <span class="ch-title">Devahūti receives the light of wisdom and attains final beatitude ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Four (Fourth Canto)</h2>
+                <span class="ch-count">31 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="04/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The Progeny of Swāyambhuva Manu's Daughters ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Ill-feeling between Lord Śiva and Dakṣa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Sati insists on joining the sacrificial festival at her father's ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Sati burns herself with the fire of Yoga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Vīrabhadra wrecks Dakṣa's sacrifice and beheads him ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Brahmā and the other gods proceed to Kailāsa and appease Lord Śiva ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Completion of Dakṣa's sacrifice ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">Dhruva's departure for the woods ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Dhruva returns home after receiving a boon from the Lord ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">Uttama's death at the hands of the Yakṣas and Dhruva's encounter with them ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Swāyambhuva Manu intervenes and persuades Dhruva to cease fighting ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">Kubera confers a boon on Dhruva, who ascends to the abode of Lord Viṣṇu ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">Dhruva's posterity and the narrative of king Aṅga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">The story of king Vena ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Descent and coronation of king Pṛthu ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">Glorification of king Pṛthu by the bards ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">King Pṛthu gets angry with Earth and the latter extols him ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">King Pṛthu milks Goddess Earth in the form of a cow ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">King Pṛthu performs a hundred horse-sacrifices ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">Lord Viṣṇu manifests Himself in the sacrificial hall of king Pṛthu ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">King Pṛthu's teaching to his subjects ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">The sage Sanaka and his three brothers impart instruction to king Pṛthu ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">King Pṛthu practises asceticism and departs for the other world ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">The hymn sung by Lord Śiva (and taught to the Pracetās) ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch25.html">
+                        <span class="ch-badge">Ch 25</span>
+                        <span class="ch-title">Introductory part of the parable of Purañjana ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch26.html">
+                        <span class="ch-badge">Ch 26</span>
+                        <span class="ch-title">Purañjana goes a hunting to the forest and the queen gets angry with him ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch27.html">
+                        <span class="ch-badge">Ch 27</span>
+                        <span class="ch-title">Raid of Caṇḍavega against the capital of Purañjana and the story of Kālakanyā ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch28.html">
+                        <span class="ch-badge">Ch 28</span>
+                        <span class="ch-title">Purañjana is reborn as a woman and attains liberation through the teaching of his friend, Avijñāta ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch29.html">
+                        <span class="ch-badge">Ch 29</span>
+                        <span class="ch-title">The Dialogue between king Pracinabarhi and the sage Nārada (continued) ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch30.html">
+                        <span class="ch-badge">Ch 30</span>
+                        <span class="ch-title">Bhagavān Viṣṇu confers a boon on the Pracetās, who then return to their city and marry the foster-daughter of the trees ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04/mahatmya_ch31.html">
+                        <span class="ch-badge">Ch 31</span>
+                        <span class="ch-title">The story of the Pracetās ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Five (Fifth Canto)</h2>
+                <span class="ch-count">26 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="05/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The story of Priyavrata ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">An account of Āgnīdhra ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">The descent of Lord Rṣabha ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">The sovereignty of Rṣabha ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Lord Rṣabhadeva instructs His sons and Himself takes to the life of an ascetic who has shaken off worldly feeling and obligation ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Lord Rṣabha quits His body ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">The story of Bharata ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">Bharata conceives an infatuation for a fawn and is reborn as a deer ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Bharata reborn for a second time in a Brāhmaṇa family ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">The meeting of Jaḍabharata with king Rahūgaṇa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Bharata's teaching to king Rahūgaṇa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">Bharata answers the query of Rahūgaṇa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">Bharata allegorically represents this state of worldly existence as a forest and the doubts of Rahūgaṇa get resolved ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">Jaḍabharata elucidated the meaning of the allegory ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">An account of Priyavrata's posterity continued ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">A description of the terrestrial world ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">An account of the descent of the holy Gaṅgā and a song of praise to Lord Saṅkarṣaṇa by the divine Śaṅkara ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">A description of (the various Varṣas) of the terrestrial globe continued ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">The description of Jambūḍwīpa concluded ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">A description of the other six Dwipas and the mountain-range called Lokāloka ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">A description of the stellar sphere as well as of the chariot of the sun-god and his entourage ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">The relative position of the planets and their movements ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">The disposition of the stellar sphere represented in the form of a dolphin ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">The position of Rāhu etc., and the limits of the heavenlike subterranean regions ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch25.html">
+                        <span class="ch-badge">Ch 25</span>
+                        <span class="ch-title">A supplement to the description of the subterranean system ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05/mahatmya_ch26.html">
+                        <span class="ch-badge">Ch 26</span>
+                        <span class="ch-title">A description of the infernal regions ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Six (Sixth Canto)</h2>
+                <span class="ch-count">19 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="06/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The introductory part of the story of Ajamila</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">The messengers of Lord Visnu expound the Bhagavata Dharma (the cult of Devotion) and Ajamila ascends to the Lord's supreme Abode</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">A dialogue between Yama (the god of retribution) and his messengers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Daksa extols the Lord, who appears in person before him</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Narada subjected to an execration (by Daksa)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">The posterity of Daksa through his sixty daughters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Deserted by the sage Bhaspati, the gods choose Viswarupa for their preceptor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The text of the (holy) Narayana-Kavaca (a prayer invoking the protection of Lord Narayana) taught (to Indra)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Indra slays Viswarupa; and routed by the demon Vrtra (the younger brother of Viswarupa), the gods call on the sage Dadhici at the instance of the Lord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">An account of the conflict between Indra and Vrtra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Vrtra's teaching to Indra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">The demon Vrtra slain</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">Indra's Victory</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">The Lament of Citraketu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Citraketu consoled</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">Citraketu realizes (his oneness with) the Supreme Spirit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">Citraketu cursed (by Goddess Parvati)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">An account of the birth of the Maruts (the forty-nine wind-gods)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">The procedure of observing the sacred vow of Purnsavana</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Seven (Seventh Canto)</h2>
+                <span class="ch-count">15 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="07/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">A dialogue between Narada and Yudhishtira; the story of Jaya and Vijaya</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Hiranyakasipu rids his mother (Diti) of her grief (caused by the death of his younger brother, Hiranyaksa).</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Hiranyakasipu asks a number of boons (of Brahma, who is pleased with his austerities)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Hiranyakasipu's atrocities and Prahrada's virtues recounted</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Hiranyakasipu attempts the life of Prahrada</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Prahrada's teaching to the demon boys</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">(Prahrada's) teaching to the Daityas' sons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">Lord Nrsirha extolled on the death of the demon king (at His hands)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">A Eulogy of the Lord (by Prahrada)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">(The story of) the conquest of Tripura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">An inquiry into right conduct</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">An inquiry into right conduct (continued)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">The course of conduct prescribed for a Samnyasi and a dialogue between an Avadhuta and Prahrada</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">An inquiry into right conduct (continued)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">An inquiry into right conduct (concluded)</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Eight (Eighth Canto)</h2>
+                <span class="ch-count">24 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="08/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The Manvantaras described</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">The lord of elephants is caught in the grip of an alligator</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">The leader of the elephants extols the Lord and is rescued from the dangerous situation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Deliverance of the lord of the elephants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">The gods resort to Brahma and the latter glorifies the Lord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Transportation of Mount Mandara (to serve as a churn-staff for stirring the ocean of milk)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">The gods and demons proceed to churn the ocean and Lord Siva drinks the poison appearing out of it</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The manifestation (in a personal form) of the Lord's (own) enchanting potency</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Appearing in the form of Mohini (an enchanting damsel), the Lord deals out nectar among the gods</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">Outbreak of hostilities between the gods and the Asuras</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Conclusion of the conflict between the gods and the demons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">Infatuation of Lord Sankara</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">An account of the (concluding eight) Manvantaras</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">Functions of a Manu and other functionaries holding office in his administration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Conquest of heaven by Bali</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">The procedure of (observing the vow of) Payovrata disclosed to Aditi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">The Lord manifests Himself before Aditi and grants her desired boon</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">The Lord appears as the divine Dwarf and visits the sacrificial performance of Bali.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">The Lord asks three paces of land of Bali, who gives his word; while Sukra remonstrates with him against this course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">A vision of the Cosmic Body (of the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">Bali put in bonds</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">A dialogue between king Bali and Lord Vamana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">Freed from bondage,Bali enters the region of Sutala</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">The story of the descent of the divine Fish recounted</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Nine (Ninth Canto)</h2>
+                <span class="ch-count">24 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="09/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The story of King Sudyumna, son of Valvaswata Manu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">The posterity of Karuṣa and other four sons of Valvaswata Manu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">The story of the sage Cyavana and his wife Sukanya; the posterity of King Saryati.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">The stories of Nabhaga and King Ambariṣa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">The story of Ambariṣa (Concluded)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">The posterity of Ikṣwaku: the stories of Māndhata and the sage Saubhari</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">The story of the King Hariscandra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The story of King Sagara</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">The story of King Bhagiratha: the descent of the holy Gaṅga</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">An account of Sri Rama's pastimes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">The other pastimes of Sri Rama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">The genealogy of (the remaining kings of) Ikṣwaku's line</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">The posterity of Nimi described</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">A brief survey of the Lunar Dynasty</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">The stories of Rcika, Jamadagni and Parasurama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">Extermination of the Kṣatriyas by Parasurama: an account of the posterity of the sage Viswāmitra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">The posterity of Kings Kṣatravṛddha, Raji and others of the Lunar Dynasty</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">The story of Yayati</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">Yayati's Renunciation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">The posterity of Puru and the stories of Dusyanta and Bharata</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">The posterity of Bharata and the story of Rantideva</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">The genealogy of the Pañcalas, the Kurus and the kings of Magadha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">An account of the posterity of Anu, Druhyu, Turvasu and Yadu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">An account of the posterity of Yadu</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Ten (Tenth Canto)</h2>
+                <span class="ch-count">90 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="10/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The Lord reassures Mother Earth; Vasudeva marries Devaki and Karhsa despatches the six sons of Devaki</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">The Lord enters the womb of Devaki and is extolled by the gods</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Advent of Lord Sri Krsna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">Slipping from the grip of Kamsa, Yogamaya ascends to the heavens and utters a prophecy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">Festivities connected with the Birth of Lord Sri Krsna at Gokula</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">Deliverance of Putana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Deliverance of the demon Tmavarta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The Naming Ceremony of the Lord and His Infantile Sports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Grace (showered) on Yasoda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">The imprecation pronounced (on Kubera's sons) by Narada (and their consequent redemption)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">Destruction of Vatsasura and Bakasura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">Deliverance of Aghasura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">Brahma is seized with and ultimately rid of infatuation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">Brahma extols the Lord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">The demon Dhenuka slain</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">The Deliverance of Kalya</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">The Lord rescues the inhabitants of Vraja from a wild fire</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">The Lord slays the demon Pralamba</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">The Lord swallows up a wild fire (again)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">A description of the Rains and Autumn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">The Song Inspired by the Flute</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">The Lord steals away the garments of cowherd maids</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">Redemption of the wives of some Brahmaas engaged in a sacrifice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">The Lord stops the sacrifice to Indra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch25.html">
+                        <span class="ch-badge">Ch 25</span>
+                        <span class="ch-title">The Lord lifts up Mount Govardhana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch26.html">
+                        <span class="ch-badge">Ch 26</span>
+                        <span class="ch-title">Nanda's conversation with the cowherds about Sri Krsna's glory</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch27.html">
+                        <span class="ch-badge">Ch 27</span>
+                        <span class="ch-title">Indra extols Sri Krsna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch28.html">
+                        <span class="ch-badge">Ch 28</span>
+                        <span class="ch-title">Sri Krsna rescues His father from the realm of Varuna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch29.html">
+                        <span class="ch-badge">Ch 29</span>
+                        <span class="ch-title">A description of the (celebrated) Rasa Play (of the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch30.html">
+                        <span class="ch-badge">Ch 30</span>
+                        <span class="ch-title">The Gopis' Quest for Sri Krsna during the Rasa Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch31.html">
+                        <span class="ch-badge">Ch 31</span>
+                        <span class="ch-title">The Gopis' Song (at the Lord's disappearance) during the Rasa Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch32.html">
+                        <span class="ch-badge">Ch 32</span>
+                        <span class="ch-title">The Lord comforts the Gopis during the Rasa Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch33.html">
+                        <span class="ch-badge">Ch 33</span>
+                        <span class="ch-title">A Description of the Rasa Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch34.html">
+                        <span class="ch-badge">Ch 34</span>
+                        <span class="ch-title">The Lord makes short work of Sankhacuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch35.html">
+                        <span class="ch-badge">Ch 35</span>
+                        <span class="ch-title">The Gopis' song in pairs of verses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch36.html">
+                        <span class="ch-badge">Ch 36</span>
+                        <span class="ch-title">Kamsa sends Akrura to Vraja to bring Sri Krsna and Balarama to Mathura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch37.html">
+                        <span class="ch-badge">Ch 37</span>
+                        <span class="ch-title">The demon Vyoma slain (by the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch38.html">
+                        <span class="ch-badge">Ch 38</span>
+                        <span class="ch-title">Akrura's arrival (in Vraja)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch39.html">
+                        <span class="ch-badge">Ch 39</span>
+                        <span class="ch-title">Departure of Sri Krsna and Balarama for Mathura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch40.html">
+                        <span class="ch-badge">Ch 40</span>
+                        <span class="ch-title">Akrura's eulogy (of the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch41.html">
+                        <span class="ch-badge">Ch 41</span>
+                        <span class="ch-title">Entry into Mathura (of Sri Krsna and Balarama)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch42.html">
+                        <span class="ch-badge">Ch 42</span>
+                        <span class="ch-title">A description of the amphitheatre for wrestlers (set up by Karhsa)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch43.html">
+                        <span class="ch-badge">Ch 43</span>
+                        <span class="ch-title">The elephant Kuvalayapiqa killed (by the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch44.html">
+                        <span class="ch-badge">Ch 44</span>
+                        <span class="ch-title">Karhsa slain (by the Lord)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch45.html">
+                        <span class="ch-badge">Ch 45</span>
+                        <span class="ch-title">The Lord brings back His preceptor's son (from the abode of Death)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch46.html">
+                        <span class="ch-badge">Ch 46</span>
+                        <span class="ch-title">The Lord relieves the agony of Nanda (by despatching Uddhava to Vraja with a message of endearment)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch47.html">
+                        <span class="ch-badge">Ch 47</span>
+                        <span class="ch-title">Dialogue between Uddhava and Gopis and ode to a black bee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch48.html">
+                        <span class="ch-badge">Ch 48</span>
+                        <span class="ch-title">The Lord pays a visit to Kubja (the hunchbacked woman) and Akrura at their respective places</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch49.html">
+                        <span class="ch-badge">Ch 49</span>
+                        <span class="ch-title">Akrura's visit to Hastinapura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch50.html">
+                        <span class="ch-badge">Ch 50</span>
+                        <span class="ch-title">The Lord ensconces Himself in a fortress (built by Him in the western sea under the name of Dwaraka)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch51.html">
+                        <span class="ch-badge">Ch 51</span>
+                        <span class="ch-title">(Kalayavana gets burnt and) King Mucukunda glorifies the Lord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch52.html">
+                        <span class="ch-badge">Ch 52</span>
+                        <span class="ch-title">Sri Krsna's withdrawal to Dwaraka; Balarama's marriage; Rukmini sends a Brahmaṇa with a message to Sri Krsna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch53.html">
+                        <span class="ch-badge">Ch 53</span>
+                        <span class="ch-title">Sri Krsna carries away Rukmini</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch54.html">
+                        <span class="ch-badge">Ch 54</span>
+                        <span class="ch-title">Discomfiture of Sisupala's allies and Rukmi and the Espousal of Rukmini by Sri Krsna solemnized</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch55.html">
+                        <span class="ch-badge">Ch 55</span>
+                        <span class="ch-title">The story of Pradyumna's birth (and the destruction of the demon Sambara)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch56.html">
+                        <span class="ch-badge">Ch 56</span>
+                        <span class="ch-title">The story of the Syamantaka gem; Sri Krsna weds Jambavati and Satyabhamā</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch57.html">
+                        <span class="ch-badge">Ch 57</span>
+                        <span class="ch-title">Syamantaka stolen; Satadhanva killed and Akrua recalled to Dwaraka</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch58.html">
+                        <span class="ch-badge">Ch 58</span>
+                        <span class="ch-title">Sri Krsna's espousal with (the rest of) His eight principal Spouses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch59.html">
+                        <span class="ch-badge">Ch 59</span>
+                        <span class="ch-title">The Lord snatches away (by force) a Parijata tree (from Indra's paradise) and kills the demon Naraka (the son of Mother Earth)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch60.html">
+                        <span class="ch-badge">Ch 60</span>
+                        <span class="ch-title">A dialogue between Sri Krsna and Rukmini</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch61.html">
+                        <span class="ch-badge">Ch 61</span>
+                        <span class="ch-title">(A description of the Lord's progeny; Rukmi killed (by Balarama) during Aniruddha's wedding</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch62.html">
+                        <span class="ch-badge">Ch 62</span>
+                        <span class="ch-title">Aniruddha made captive</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch63.html">
+                        <span class="ch-badge">Ch 63</span>
+                        <span class="ch-title">Aniruddha brought back (to Dwaraka)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch64.html">
+                        <span class="ch-badge">Ch 64</span>
+                        <span class="ch-title">The story of king Nrg a</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch65.html">
+                        <span class="ch-badge">Ch 65</span>
+                        <span class="ch-title">Baladeva triumphantly diverts the river Yamuna from its course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch66.html">
+                        <span class="ch-badge">Ch 66</span>
+                        <span class="ch-title">Paundraka and others killed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch67.html">
+                        <span class="ch-badge">Ch 67</span>
+                        <span class="ch-title">Dwivida killed (by Balarama)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch68.html">
+                        <span class="ch-badge">Ch 68</span>
+                        <span class="ch-title">Triumph of Sankarsana—in the form of dragging Hastinapura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch69.html">
+                        <span class="ch-badge">Ch 69</span>
+                        <span class="ch-title">A Glimpse into the household life of Sri Krsna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch70.html">
+                        <span class="ch-badge">Ch 70</span>
+                        <span class="ch-title">Sri Krsna's Daily Routine; Kings taken captive by Jarasandha send their messenger to Sri Krsna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch71.html">
+                        <span class="ch-badge">Ch 71</span>
+                        <span class="ch-title">Sri Krsna goes to Indraprastha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch72.html">
+                        <span class="ch-badge">Ch 72</span>
+                        <span class="ch-title">Jarasandha killed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch73.html">
+                        <span class="ch-badge">Ch 73</span>
+                        <span class="ch-title">Sri Krsna and others return to Indraprastha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch74.html">
+                        <span class="ch-badge">Ch 74</span>
+                        <span class="ch-title">Sisupala killed (by Sri Krsna)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch75.html">
+                        <span class="ch-badge">Ch 75</span>
+                        <span class="ch-title">Duryodhana's Humiliation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch76.html">
+                        <span class="ch-badge">Ch 76</span>
+                        <span class="ch-title">Salva's Encounter with the Yadavas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch77.html">
+                        <span class="ch-badge">Ch 77</span>
+                        <span class="ch-title">Salva's Deliverance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch78.html">
+                        <span class="ch-badge">Ch 78</span>
+                        <span class="ch-title">Deliverance of Dantavakra and Viduratha; Suta killed by Sri Balarama during His Pilgrimage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch79.html">
+                        <span class="ch-badge">Ch 79</span>
+                        <span class="ch-title">An account of Balarama's Pilgrimage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch80.html">
+                        <span class="ch-badge">Ch 80</span>
+                        <span class="ch-title">Sri Krsna's Reception of Sudama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch81.html">
+                        <span class="ch-badge">Ch 81</span>
+                        <span class="ch-title">The story of parched rice brought as a Present (for Sri Krsna) by Sudama</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch82.html">
+                        <span class="ch-badge">Ch 82</span>
+                        <span class="ch-title">Meeting of the Vrnsis with the Gopas and Gopis (of Vndabana)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch83.html">
+                        <span class="ch-badge">Ch 83</span>
+                        <span class="ch-title">Conversation between Bhagavan Sri Krsna's consorts and Draupadi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch84.html">
+                        <span class="ch-badge">Ch 84</span>
+                        <span class="ch-title">An account of the pilgrimage (undertaken by Lord Sri Krsna)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch85.html">
+                        <span class="ch-badge">Ch 85</span>
+                        <span class="ch-title">The Lord brings back (from the abode of Death) His (six) elder brothers (throttled by Kamsa)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch86.html">
+                        <span class="ch-badge">Ch 86</span>
+                        <span class="ch-title">(Subhadra carried away by Arjuna;) the Lord's Grace on Srutadeva</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch87.html">
+                        <span class="ch-badge">Ch 87</span>
+                        <span class="ch-title">A Song of Praise uttered by the Vedas (in their living form)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch88.html">
+                        <span class="ch-badge">Ch 88</span>
+                        <span class="ch-title">Lord Rudra rescued (from trouble)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch89.html">
+                        <span class="ch-badge">Ch 89</span>
+                        <span class="ch-title">(The three chief gods put to test by the sage Bhgru;) the Lord brings back the (dead) sons of a Brahmaṇa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="10/mahatmya_ch90.html">
+                        <span class="ch-badge">Ch 90</span>
+                        <span class="ch-title">The Story of (the amorous sports of) Sri Krsna narrated</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Eleven (Eleventh Canto)</h2>
+                <span class="ch-count">31 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="11/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">The curse of the Risis invoking the destruction of Yadu's race</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">Narada visits Vasudeva and reproduces the dialogue between King Janaka and the nine Yogiswaras</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">A Description of Maya and the means of transcending it; an exposition of Brahma and the Path of Action</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">A description of the Lord's Descents</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">The Fate of non-devotees; different methods of the Lord's worship according to the different Yugas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">The gods entreat the Lord to return to His divine realm and Uddhava approaches Him on the eve of the Yadus' departure for Prabhasa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">The Legend of an Ascetic—the Story of eight (out of twenty-four) preceptors (from the earth to the pigeon) recognized by him</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">What the Avadhuta learnt from the nine preceptors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">Story of the seven preceptors, the osprey and others; and the end of the Avadhuta's discourse</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">The emptiness of earthly and other-worldly enjoyments exposed ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">The characteristics of bound and liberated souls as well as of devotees ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">The Glory of Satsanga; how to perform one's prescribed duty and how to relinquish it ? ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">The teaching imparted by the Lord in the form of the Divine Swan to the sage Sanaka and his three brothers ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch14.html">
+                        <span class="ch-badge">Ch 14</span>
+                        <span class="ch-title">Glory of the Path of Devotion and the Process of Meditation described ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch15.html">
+                        <span class="ch-badge">Ch 15</span>
+                        <span class="ch-title">Names and characteristics of the various Siddhis (mystic powers) acquired through Yoga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch16.html">
+                        <span class="ch-badge">Ch 16</span>
+                        <span class="ch-title">Glorious manifestations of the Lord enumerated ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch17.html">
+                        <span class="ch-badge">Ch 17</span>
+                        <span class="ch-title">The duties pertaining to the four Varnas and four Āśramas ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch18.html">
+                        <span class="ch-badge">Ch 18</span>
+                        <span class="ch-title">The Duties of anchorites and recluses ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch19.html">
+                        <span class="ch-badge">Ch 19</span>
+                        <span class="ch-title">A Dissertation on Devotion, Spiritual Enlightenment and Yogic disciplines in the form of the five Yamas, the (five) Niyamas and so on ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch20.html">
+                        <span class="ch-badge">Ch 20</span>
+                        <span class="ch-title">Jñānayoga, Karmayoga and Bhaktiyoga analysed ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch21.html">
+                        <span class="ch-badge">Ch 21</span>
+                        <span class="ch-title">The process of determining what is good and what is evil and the secret underlying it ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch22.html">
+                        <span class="ch-badge">Ch 22</span>
+                        <span class="ch-title">Categories enumerated; Distinction between Prakṛti and Puruṣa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch23.html">
+                        <span class="ch-badge">Ch 23</span>
+                        <span class="ch-title">The Episode of a forbearing Brāhmaṇa ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch24.html">
+                        <span class="ch-badge">Ch 24</span>
+                        <span class="ch-title">A Dissertation on Sāṅkhya-Yoga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch25.html">
+                        <span class="ch-badge">Ch 25</span>
+                        <span class="ch-title">The operation of the three Guṇas described ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch26.html">
+                        <span class="ch-badge">Ch 26</span>
+                        <span class="ch-title">The Utterance of Purūravā bearing on Aversion for the pleasures of sense ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch27.html">
+                        <span class="ch-badge">Ch 27</span>
+                        <span class="ch-title">The Yoga of Formal Worship ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch28.html">
+                        <span class="ch-badge">Ch 28</span>
+                        <span class="ch-title">The Highest Truth Discussed ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch29.html">
+                        <span class="ch-badge">Ch 29</span>
+                        <span class="ch-title">Courses of conduct pleasing to the Lord; Uddhava's departure for Badarikāśrama ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch30.html">
+                        <span class="ch-badge">Ch 30</span>
+                        <span class="ch-title">Holocaust of Yadu's Race ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="11/mahatmya_ch31.html">
+                        <span class="ch-badge">Ch 31</span>
+                        <span class="ch-title">The Lord's Ascent to His Divine Realm ...</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+        <details class="canto-card" >
+            <summary>
+                <h2>Book Twelve (Twelfth Canto)</h2>
+                <span class="ch-count">13 Chapters</span>
+            </summary>
+            <ul class="chapter-list">
+                
+                <li>
+                    <a href="12/mahatmya_ch01.html">
+                        <span class="ch-badge">Ch 1</span>
+                        <span class="ch-title">Lines of kings of Kaliyuga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch02.html">
+                        <span class="ch-badge">Ch 2</span>
+                        <span class="ch-title">The Evils of Kaliyuga ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch03.html">
+                        <span class="ch-badge">Ch 3</span>
+                        <span class="ch-title">Vanity of kings; righteous conduct for every Yuga; the means to escape the evils of Kaliyuga—loud chanting of the Divine Name ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch04.html">
+                        <span class="ch-badge">Ch 4</span>
+                        <span class="ch-title">The Fourfold Pralaya ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch05.html">
+                        <span class="ch-badge">Ch 5</span>
+                        <span class="ch-title">The (Final) Teaching (of Śukadeva) concerning Brahma ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch06.html">
+                        <span class="ch-badge">Ch 6</span>
+                        <span class="ch-title">(Pariksit attains the supreme goal and Janamejaya commences a snake-sacrifice;) Classification of the Vedas into so many Śākhās or schools ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch07.html">
+                        <span class="ch-badge">Ch 7</span>
+                        <span class="ch-title">Different Schools of Atharvaveda and the Characteristics of the Purāṇas ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch08.html">
+                        <span class="ch-badge">Ch 8</span>
+                        <span class="ch-title">The sage Mārkaṇḍeya embarks on a course of austerities and receives a boon ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch09.html">
+                        <span class="ch-badge">Ch 9</span>
+                        <span class="ch-title">The sage Márkandéya witnesses the Lord's Maya</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch10.html">
+                        <span class="ch-badge">Ch 10</span>
+                        <span class="ch-title">Lord Siva confers a boon on Markandeya</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch11.html">
+                        <span class="ch-badge">Ch 11</span>
+                        <span class="ch-title">The significance of the Lord's own limbs, attendants and weapons and a description of the retinue of the Sun-god (changing every month in the course of a solar year)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch12.html">
+                        <span class="ch-badge">Ch 12</span>
+                        <span class="ch-title">A Synopsis of (all) the twelve Skandhas (of Srimad Bhagavata)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="12/mahatmya_ch13.html">
+                        <span class="ch-badge">Ch 13</span>
+                        <span class="ch-title">The extent of the eighteen Puranas and the glory of the Bhagavata</span>
+                    </a>
+                </li>
+            </ul>
+        </details>
+        
+    </div>
+
+    
+<footer class="doc-footer" style="margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b; font-size: 0.9rem;">
+    <p><strong>🙏 Shri Krishnarpanam Asthu 🙏</strong> | Maintained &amp; published via <a href="https://ventpipe.blog" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: none; font-weight: 500;">ventpipe.blog</a></p>
+</footer>
+
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search-box", showSubResults: true });
+    });
+
+    function toggleAll(openState) {
+        document.querySelectorAll('details.canto-card').forEach(el => {
+            el.open = openState;
+        });
+    }
+</script>
+
+</body>
+</html>
