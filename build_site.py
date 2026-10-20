@@ -127,14 +127,15 @@ def get_all_html_files():
 
 
 def inject_nav_and_pagefind(all_files, chapter_titles):
-    """Injects responsive edge-to-edge styles, green hover accent, navigation, and Pagefind search attributes into all chapter HTML files."""
-    print("Injecting Navigation, Edge-to-Edge Mobile CSS & Green Hover into HTML files...")
+    """Injects responsive edge-to-edge styles, visible left border, green hover accent, navigation, and Pagefind search attributes into all chapter HTML files."""
+    print("Injecting Navigation, Visible Left Border & Zero-Shift Hover into HTML files...")
 
     nav_style = """
     <style id="custom-theme-fixes">
         :root {
             --hover-green: #e8f5e9 !important;
             --hover-green-border: #2e7d32 !important;
+            --table-border: #cbd5e1 !important;
         }
 
         /* Global Box Sizing & Mobile Overflows */
@@ -154,19 +155,38 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
             padding: 30px !important;
             box-sizing: border-box !important;
         }
+
+        /* Table Styling with Explicit Left Border */
         .parallel-table {
             width: 100% !important;
             table-layout: fixed !important;
-            border-collapse: collapse !important;
+            border-collapse: separate !important;
+            border-spacing: 0 !important;
             margin-top: 20px;
+            border: 1px solid var(--table-border) !important;
         }
-        
-        /* Forest Green Hover Accent */
-        .parallel-table tbody tr:hover td,
-        .parallel-table tbody tr:hover,
-        .parallel-table tbody tr:active td {
-            background-color: var(--hover-green) !important;
+
+        .parallel-table th,
+        .parallel-table td {
+            border-right: 1px solid var(--table-border) !important;
+            border-bottom: 1px solid var(--table-border) !important;
+            padding: 12px 16px !important;
+            transition: background-color 0.15s ease, border-left-color 0.15s ease;
+        }
+
+        /* Always show solid left border on first column */
+        .parallel-table td:first-child,
+        .parallel-table th:first-child {
+            border-left: 4px solid var(--table-border) !important;
+        }
+
+        /* Smooth Green Hover Accent on Left Border & Background */
+        .parallel-table tbody tr:hover td:first-child {
             border-left: 4px solid var(--hover-green-border) !important;
+        }
+
+        .parallel-table tbody tr:hover td {
+            background-color: var(--hover-green) !important;
         }
 
         /* Mobile Viewport Edge-to-Edge Fixes */
@@ -202,7 +222,7 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
             }
             .sanskrit-col {
                 border-right: none !important;
-                border-bottom: 1px dashed var(--border-color, #e2d9d0) !important;
+                border-bottom: 1px dashed var(--table-border) !important;
             }
             /* Edge-to-Edge Background Shading */
             .parallel-table tr:nth-child(even) td {
@@ -214,6 +234,8 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
             .parallel-table tbody tr:active td,
             .parallel-table tbody tr:hover td {
                 background-color: var(--hover-green) !important;
+            }
+            .parallel-table tbody tr:hover td:first-child {
                 border-left: 4px solid var(--hover-green-border) !important;
             }
             .page-nav {
@@ -585,7 +607,7 @@ def generate_index_html(canto_data, existing_cantos):
 """
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(index_content)
-    print("Generated master 'index.html' with green hover.")
+    print("Generated master 'index.html' with visible left border & green hover.")
 
 
 if __name__ == "__main__":

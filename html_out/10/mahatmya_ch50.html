@@ -5,145 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Śrīmad Bhāgavata Māhātmya - Discourse 50</title>
-<style>
-        :root {
-            --primary-color: #701c1c;
-            --secondary-color: #8b2525;
-            --bg-light: #fdfbf7;
-            --card-bg: #ffffff;
-            --text-dark: #2c2c2c;
-            --border-color: #e2d9d0;
-            --verse-bg: #faf6f0;
-            --hover-yellow: #fffde7;
-        }
 
-        body {
-            font-family: 'Georgia', 'Noto Serif Devanagari', serif;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.8;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border: 1px solid var(--border-color);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            text-align: center;
-            font-size: 2.2em;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        .parallel-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .parallel-table th {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            font-size: 1.1em;
-            padding: 12px;
-            text-align: left;
-        }
-
-        .parallel-table td {
-            padding: 16px;
-            border-bottom: 1px solid var(--border-color);
-            vertical-align: top;
-        }
-
-        .parallel-table tr {
-            transition: background-color 0.2s ease-in-out;
-        }
-
-        .parallel-table tr:nth-child(even) {
-            background-color: var(--verse-bg);
-        }
-
-        /* Yellow Hover Highlight */
-        .parallel-table tbody tr:hover {
-            background-color: var(--hover-yellow) !important;
-        }
-
-        .sanskrit-col {
-            width: 45%;
-            font-family: 'Noto Sans Devanagari', 'Mangal', serif;
-            font-size: 1.1em;
-            color: #1a1a1a;
-            border-right: 1px dashed var(--border-color);
-        }
-
-        .english-col {
-            width: 55%;
-            font-size: 1em;
-            color: var(--text-dark);
-        }
-
-        /* Speaker Headers & Titles */
-        .sanskrit-col h2, .sanskrit-col h3, .sanskrit-col h4,
-        .english-col h2, .english-col h3, .english-col h4 {
-            color: var(--secondary-color);
-            margin-top: 0;
-            margin-bottom: 6px;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        .sanskrit-col h2, .english-col h2 {
-            font-size: 1.3em;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 8px;
-            background: var(--verse-bg);
-            padding-top: 4px;
-            padding-bottom: 4px;
-            border-radius: 4px;
-        }
-
-        .sanskrit-col h3, .sanskrit-col h4, .english-col h3, .english-col h4 {
-            font-size: 1.05em;
-        }
-
-        .sanskrit-col p, .english-col p {
-            margin: 0 0 8px 0;
-            padding: 0;
-            display: inline-block;
-            width: 100%;
-        }
-
-        .verse-num {
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-left: 6px;
-        }
-
-        @media (max-width: 768px) {
-            .parallel-table, .parallel-table tbody, .parallel-table tr, .parallel-table td {
-                display: block;
-                width: 100%;
-            }
-            .sanskrit-col {
-                border-right: none;
-                border-bottom: 1px dashed var(--border-color);
-                width: 100%;
-            }
-            .english-col {
-                width: 100%;
-            }
-        }
-    </style>
 <style>
         .page-nav {
             display: flex;
@@ -168,14 +30,150 @@
             font-weight: normal;
         }
     </style>
+
+<style id="custom-theme-fixes">
+        :root {
+            --hover-green: #e8f5e9 !important;
+            --hover-green-border: #2e7d32 !important;
+            --table-border: #cbd5e1 !important;
+        }
+
+        /* Global Box Sizing & Mobile Overflows */
+        * {
+            box-sizing: border-box !important;
+        }
+        html, body {
+            overflow-x: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        .container {
+            max-width: 1200px !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+            padding: 30px !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Table Styling with Explicit Left Border */
+        .parallel-table {
+            width: 100% !important;
+            table-layout: fixed !important;
+            border-collapse: separate !important;
+            border-spacing: 0 !important;
+            margin-top: 20px;
+            border: 1px solid var(--table-border) !important;
+        }
+
+        .parallel-table th,
+        .parallel-table td {
+            border-right: 1px solid var(--table-border) !important;
+            border-bottom: 1px solid var(--table-border) !important;
+            padding: 12px 16px !important;
+            transition: background-color 0.15s ease, border-left-color 0.15s ease;
+        }
+
+        /* Always show solid left border on first column */
+        .parallel-table td:first-child,
+        .parallel-table th:first-child {
+            border-left: 4px solid var(--table-border) !important;
+        }
+
+        /* Smooth Green Hover Accent on Left Border & Background */
+        .parallel-table tbody tr:hover td:first-child {
+            border-left: 4px solid var(--hover-green-border) !important;
+        }
+
+        .parallel-table tbody tr:hover td {
+            background-color: var(--hover-green) !important;
+        }
+
+        /* Mobile Viewport Edge-to-Edge Fixes */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 !important;
+            }
+            .container {
+                padding: 10px 0 !important;
+                margin: 0 !important;
+                border: none !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                width: 100% !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            .parallel-table, .parallel-table tbody, .parallel-table tr {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .parallel-table thead {
+                display: none !important;
+            }
+            .sanskrit-col, .english-col {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 14px 16px !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            .sanskrit-col {
+                border-right: none !important;
+                border-bottom: 1px dashed var(--table-border) !important;
+            }
+            /* Edge-to-Edge Background Shading */
+            .parallel-table tr:nth-child(even) td {
+                background-color: var(--verse-bg, #faf6f0);
+            }
+            .parallel-table tr:nth-child(odd) td {
+                background-color: #ffffff;
+            }
+            .parallel-table tbody tr:active td,
+            .parallel-table tbody tr:hover td {
+                background-color: var(--hover-green) !important;
+            }
+            .parallel-table tbody tr:hover td:first-child {
+                border-left: 4px solid var(--hover-green-border) !important;
+            }
+            .page-nav {
+                margin: 10px 12px !important;
+            }
+        }
+
+        .page-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 12px 16px;
+            background-color: var(--verse-bg, #faf6f0);
+            border: 1px solid var(--border-color, #e2d9d0);
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        .page-nav a {
+            color: var(--primary-color, #701c1c);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .page-nav a:hover {
+            text-decoration: underline;
+        }
+        .page-nav .nav-home {
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
 <div class="container" data-pagefind-body="true">
 <h1>Canto 10 - Chapter 50: The Lord ensconces Himself in a fortress (built by Him in the western sea under the name of Dwaraka)</h1>
 <nav class="page-nav">
-<a href="../10/mahatmya_ch49.html">← Previous Chapter</a>
-<a class="nav-home" href="../index.html">📜 Table of Contents</a>
-<a href="../10/mahatmya_ch51.html">Next Chapter →</a>
+<a href="../10/mahatmya_ch49.html">← Previous</a>
+<a class="nav-home" href="../index.html">📜 TOC</a>
+<a href="../10/mahatmya_ch51.html">Next →</a>
 </nav>
 
 
@@ -453,14 +451,15 @@ Thus ends the fiftieth discourse entitled "The Lord ensconces Himself in a fortr
 </table>
 
 
+
 <nav class="page-nav">
-<a href="../10/mahatmya_ch49.html">← Previous Chapter</a>
-<a class="nav-home" href="../index.html">📜 Table of Contents</a>
-<a href="../10/mahatmya_ch51.html">Next Chapter →</a>
+<a href="../10/mahatmya_ch49.html">← Previous</a>
+<a class="nav-home" href="../index.html">📜 TOC</a>
+<a href="../10/mahatmya_ch51.html">Next →</a>
 </nav>
 
 <footer class="doc-footer" style="margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b; font-size: 0.9rem;">
-<p><strong>🙏 Shri Krishnarpanam Asthu 🙏</strong> | Maintained &amp; published via <a href="https://ventpipe.blog" rel="noopener noreferrer" style="color: #0284c7; text-decoration: none; font-weight: 500;" target="_blank">ventpipe.blog</a></p>
+<p><strong>🙏 Shri Krishnarpanam Asthu 🙏</strong> | Maintained &amp; published via <a href="https://ventpipe.blog/2026/09/29/shrimad-bhagavat-mahapurana/" rel="noopener noreferrer" style="color: #0284c7; text-decoration: none; font-weight: 500;" target="_blank">ventpipe.blog</a></p>
 </footer>
 </div>
 </body>
