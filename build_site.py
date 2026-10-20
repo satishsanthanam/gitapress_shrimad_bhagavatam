@@ -127,8 +127,8 @@ def get_all_html_files():
 
 
 def inject_nav_and_pagefind(all_files, chapter_titles):
-    """Injects responsive edge-to-edge styles, visible left border, green hover accent, navigation, and Pagefind search attributes into all chapter HTML files."""
-    print("Injecting Navigation, Visible Left Border & Zero-Shift Hover into HTML files...")
+    """Injects responsive edge-to-edge styles, visible left border, polished English typography, green hover accent, navigation, and Pagefind search attributes into all chapter HTML files."""
+    print("Injecting Navigation, Polished English Typography & Zero-Shift Hover into HTML files...")
 
     nav_style = """
     <style id="custom-theme-fixes">
@@ -170,7 +170,7 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
         .parallel-table td {
             border-right: 1px solid var(--table-border) !important;
             border-bottom: 1px solid var(--table-border) !important;
-            padding: 12px 16px !important;
+            padding: 14px 18px !important;
             transition: background-color 0.15s ease, border-left-color 0.15s ease;
         }
 
@@ -178,6 +178,30 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
         .parallel-table td:first-child,
         .parallel-table th:first-child {
             border-left: 4px solid var(--table-border) !important;
+        }
+
+        /* English Column Modern Typography */
+        .english-col {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+            font-size: 1.05rem !important;
+            line-height: 1.75 !important;
+            color: #1e293b !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+        }
+
+        .english-col b, 
+        .english-col strong {
+            color: #701c1c !important;
+            font-weight: 700 !important;
+        }
+
+        /* Sanskrit Column Typography */
+        .sanskrit-col {
+            font-family: "Siddhanta", "Noto Sans Devanagari", "Kokila", serif !important;
+            font-size: 1.35rem !important;
+            line-height: 1.7 !important;
+            color: #0d1b2a !important;
         }
 
         /* Smooth Green Hover Accent on Left Border & Background */
@@ -217,8 +241,6 @@ def inject_nav_and_pagefind(all_files, chapter_titles):
                 width: 100% !important;
                 max-width: 100% !important;
                 padding: 14px 16px !important;
-                word-wrap: break-word !important;
-                overflow-wrap: break-word !important;
             }
             .sanskrit-col {
                 border-right: none !important;
@@ -607,7 +629,7 @@ def generate_index_html(canto_data, existing_cantos):
 """
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(index_content)
-    print("Generated master 'index.html' with visible left border & green hover.")
+    print("Generated master 'index.html' with polished English typography.")
 
 
 if __name__ == "__main__":
